@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+
+}
+.carscontainer{
+ /* minimum height = screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+
+}
+
+.col{
+	min-height: 80vh;
+	min-width: 20vw;
+	box-shadow: 20px 4px 24px -55px rgba(113,108,108,0.75);
+}
+	
+.sedan{
+	background-color: hsl(31, 77%, 52%);
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.suvs{
+	background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+	background-color: hsl(179, 100%, 13%);
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.cardtext{
+	display: flex;
+	align-items: left;
+	justify-content: left;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 45px 25px 25px 35px;
+	margin: 20px 20px 10px 5px;
+}
+
+.sedanpic ,.suvspic,.luxurypic{
+	height:60px; 
+	width: 60px;
+}
+
+.learn{
+	width: 200px;
+	margin-top: 50px;
+	border-radius: 50px;
+	background-color: hsl(0, 0%, 95%);
+	text-decoration: none;
+	border:none;
+	box-shadow: 20px 4px 24px -55px rgba(113,108,108,0.75);
+}
+
+@media screen and (max-height: 375px) {
+.col{
+	min-height: 8vh;
+	min-width: 8vw;
+	}
+
+.sedan{
+	border-bottom-left-radius: 0px;
+}
+
+
+
+
+}
